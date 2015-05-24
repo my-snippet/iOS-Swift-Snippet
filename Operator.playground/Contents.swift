@@ -3,7 +3,7 @@
 import UIKit
 
 
-// Scope Operator
+// Range Operator
 var a = 97
 var z = 122
 
