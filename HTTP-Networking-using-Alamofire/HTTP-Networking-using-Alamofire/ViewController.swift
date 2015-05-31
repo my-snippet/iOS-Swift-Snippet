@@ -13,7 +13,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        Alamofire.request(.GET, "http://api.androidhive.info/json/movies.json")
+            .responseJSON { (_, _, JSON, _) in
+                println(JSON)
+        }
     }
 
     override func didReceiveMemoryWarning() {
