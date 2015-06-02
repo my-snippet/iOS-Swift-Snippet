@@ -45,7 +45,15 @@ class ViewController: UIViewController {
         tapStatus.text = "\(tabCount) taps"
     }
     
-    // TO DO : touched ended
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        let touchCount = touches.count
+        let touch = touches.first as! UITouch
+        let tabCount = touch.tapCount
+        
+        methodStatus.text = "touches ended"
+        touchStatus.text = "\(touchCount) touches"
+        tapStatus.text = "\(tabCount) taps"
+    }
     
 
     
