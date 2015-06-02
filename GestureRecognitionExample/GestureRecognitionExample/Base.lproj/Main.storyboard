@@ -31,6 +31,7 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="brY-ky-K9C" appends="YES" id="NUB-bx-2f2"/>
+                            <outletCollection property="gestureRecognizers" destination="fQQ-y2-J9B" appends="YES" id="0wU-gw-01G"/>
                         </connections>
                     </view>
                     <connections>
@@ -43,6 +44,11 @@
                         <action selector="tapDetected:" destination="BYZ-38-t0r" id="gdk-KX-eCg"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="fQQ-y2-J9B">
+                    <connections>
+                        <action selector="swipeDetected:" destination="BYZ-38-t0r" id="0tf-4s-V5Y"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>

@@ -15,11 +15,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let swipeRecognizer = UISwipeGestureRecognizer(target: self, action: "swipeDetected")
+        swipeRecognizer.direction = .Down
+        
+        self.view.addGestureRecognizer(swipeRecognizer)
     }
 
     @IBAction func tapDetected(sender: UITapGestureRecognizer) {
         statusLabel.text = "Double Tap"
+    }
+    @IBAction func swipeDetected(sender: UISwipeGestureRecognizer) {
+        statusLabel.text = "Left Swipe"
     }
     
     // implement swipe, long press also
