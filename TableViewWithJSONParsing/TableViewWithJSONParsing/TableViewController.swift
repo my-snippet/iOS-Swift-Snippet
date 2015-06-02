@@ -20,9 +20,11 @@ class TableViewController: UITableViewController {
         var binaryData = NSData(contentsOfURL: url!)
         var jsonData = JSON(data: binaryData!)
 
-        println(jsonData[0]["title"])
+        for (key: String, subJsonData: JSON)in jsonData {
+            titles.append(subJsonData["title"].string!)
+        }
         
-        tableView.estimatedRowHeight = 50
+        tableView.estimatedRowHeight = 70
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +46,9 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TableCell", forIndexPath: indexPath) as! TableViewCell
         let row = indexPath.row
+        
+        cell.titleLabel.text = titles[row]
+        
         return cell
     }
 
