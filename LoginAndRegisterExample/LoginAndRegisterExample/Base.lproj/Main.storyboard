@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginAndRegisterExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxV-HF-H3X">
+                                <rect key="frame" x="240" y="285" width="121" height="30"/>
+                                <state key="normal" title="Log In or Sign Up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iZP-T6-T3Y" kind="show" id="z7S-uo-HPo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="cxV-HF-H3X" secondAttribute="centerY" id="Vsc-xe-gfq"/>
+                            <constraint firstAttribute="centerX" secondItem="cxV-HF-H3X" secondAttribute="centerX" id="udR-xh-60F"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a6o-ue-czx">
+            <objects>
+                <viewController id="iZP-T6-T3Y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sLl-Eq-el4"/>
+                        <viewControllerLayoutGuide type="bottom" id="50L-iv-vCi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mnr-9b-qo9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fU-N7-bWJ">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <state key="normal" title="카카오톡으로 로그인하기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-84" y="285" width="568" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCA-vi-hqj">
+                                <rect key="frame" x="16" y="325" width="568" height="30"/>
+                                <state key="normal" title="페이스북으로 로그인하기">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-84" y="325" width="568" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4V-sp-A1w">
+                                <rect key="frame" x="100" y="365" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="120" y="389" width="38" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="itm-7k-9pz" kind="show" id="1Nb-qh-ujw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyv-iJ-bKm">
+                                <rect key="frame" x="450" y="363" width="49" height="30"/>
+                                <state key="normal" title="Signup">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="240" y="389" width="49" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="6SE-sv-R94" kind="show" id="48i-gT-T9t"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4F-3N-RTR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="Mqc-Xb-Q1x">
+                                        <barButtonItem key="leftBarButtonItem" image="icon_back" id="dB9-mY-eHR">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="1JG-GG-eT0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kCA-vi-hqj" firstAttribute="top" secondItem="3fU-N7-bWJ" secondAttribute="bottom" constant="10" id="1vv-hD-ECU"/>
+                            <constraint firstAttribute="centerX" secondItem="3fU-N7-bWJ" secondAttribute="centerX" id="7Kd-Ni-za6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zyv-iJ-bKm" secondAttribute="trailing" constant="85" id="Edy-fC-nnt"/>
+                            <constraint firstItem="f4V-sp-A1w" firstAttribute="top" secondItem="kCA-vi-hqj" secondAttribute="bottom" constant="34" id="HoU-HL-JMJ"/>
+                            <constraint firstAttribute="centerY" secondItem="3fU-N7-bWJ" secondAttribute="centerY" id="Lm2-Hu-1Wx"/>
+                            <constraint firstItem="f4V-sp-A1w" firstAttribute="leading" secondItem="Mnr-9b-qo9" secondAttribute="leadingMargin" constant="85" id="XBU-fS-V2m"/>
+                            <constraint firstItem="kCA-vi-hqj" firstAttribute="centerX" secondItem="3fU-N7-bWJ" secondAttribute="centerX" id="w2d-pk-EEA"/>
+                            <constraint firstItem="zyv-iJ-bKm" firstAttribute="top" secondItem="kCA-vi-hqj" secondAttribute="bottom" constant="34" id="zHL-HM-9bE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="a4F-3N-RTR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7Kd-Ni-za6"/>
+                                <exclude reference="Lm2-Hu-1Wx"/>
+                                <exclude reference="1vv-hD-ECU"/>
+                                <exclude reference="w2d-pk-EEA"/>
+                                <exclude reference="HoU-HL-JMJ"/>
+                                <exclude reference="XBU-fS-V2m"/>
+                                <exclude reference="Edy-fC-nnt"/>
+                                <exclude reference="zHL-HM-9bE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="a4F-3N-RTR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7Kd-Ni-za6"/>
+                                <include reference="Lm2-Hu-1Wx"/>
+                                <include reference="1vv-hD-ECU"/>
+                                <include reference="w2d-pk-EEA"/>
+                                <include reference="HoU-HL-JMJ"/>
+                                <include reference="XBU-fS-V2m"/>
+                                <include reference="Edy-fC-nnt"/>
+                                <include reference="zHL-HM-9bE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dw-UA-nJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="322"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ldN-zE-AIe">
+            <objects>
+                <viewController id="6SE-sv-R94" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZGn-2N-KhE"/>
+                        <viewControllerLayoutGuide type="bottom" id="DUS-k5-4XG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s6N-Pz-lEW">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-fR-6J6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Sign Up" id="Arr-Cn-SCU">
+                                        <barButtonItem key="leftBarButtonItem" image="icon_back" id="rzd-y2-Jkp">
+                                            <connections>
+                                                <segue destination="iZP-T6-T3Y" kind="show" id="RCv-Eb-L17"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Tfa-fR-6J6"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Tfa-fR-6J6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kda-UK-16e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954.5" y="542"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gn5-dl-ryS">
+            <objects>
+                <viewController id="itm-7k-9pz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pam-zU-6yk"/>
+                        <viewControllerLayoutGuide type="bottom" id="LNd-hr-Csn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nw8-3N-5w7">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N35-Vg-hnY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Log In" id="ksA-f8-GCg">
+                                        <barButtonItem key="leftBarButtonItem" image="icon_back" id="KTG-dV-aaI">
+                                            <connections>
+                                                <segue destination="iZP-T6-T3Y" kind="show" id="Tkb-9h-RhB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="N35-Vg-hnY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="N35-Vg-hnY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Grk-RZ-qN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.5" y="-188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_back" width="16" height="16"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="RCv-Eb-L17"/>
+    </inferredMetricsTieBreakers>
+</document>
