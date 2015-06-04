@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="1954.5" y="542"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Gn5-dl-ryS">
             <objects>
-                <viewController id="itm-7k-9pz" sceneMemberID="viewController">
+                <viewController id="itm-7k-9pz" customClass="LoginViewController" customModule="LoginAndRegisterExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pam-zU-6yk"/>
                         <viewControllerLayoutGuide type="bottom" id="LNd-hr-Csn"/>
@@ -249,7 +249,7 @@
                                     <constraint firstAttribute="width" constant="368" id="beZ-e6-KXB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="HuK-Sl-P5G"/>
@@ -257,13 +257,36 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="16" y="205" width="368" height="30"/>
+                                    <rect key="frame" x="16" y="205" width="368" height="45"/>
                                     <mask key="constraints">
                                         <include reference="HuK-Sl-P5G"/>
                                         <include reference="beZ-e6-KXB"/>
                                     </mask>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPH-lF-P5j">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="WxO-Up-dxX"/>
+                                    <constraint firstAttribute="height" constant="60" id="nWS-hY-j0f"/>
+                                </constraints>
+                                <state key="normal" title="로그인">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WxO-Up-dxX"/>
+                                        <exclude reference="nWS-hY-j0f"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="177" y="269" width="39" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="WxO-Up-dxX"/>
+                                        <include reference="nWS-hY-j0f"/>
+                                    </mask>
+                                </variation>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 주소" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-1k-D5W">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <constraints>
@@ -293,8 +316,10 @@
                             <constraint firstAttribute="centerX" secondItem="2gW-b2-SIz" secondAttribute="centerX" id="5hN-IT-dXb"/>
                             <constraint firstItem="2gW-b2-SIz" firstAttribute="top" secondItem="1dw-1k-D5W" secondAttribute="bottom" constant="10" id="FT5-r6-czi"/>
                             <constraint firstItem="LNd-hr-Csn" firstAttribute="top" secondItem="nKw-qb-CDR" secondAttribute="bottom" constant="550" id="Gd6-w1-Et6"/>
+                            <constraint firstItem="HPH-lF-P5j" firstAttribute="top" secondItem="2gW-b2-SIz" secondAttribute="bottom" constant="40" id="Jz5-zP-BhS"/>
                             <constraint firstItem="LNd-hr-Csn" firstAttribute="top" secondItem="F5m-03-DWe" secondAttribute="bottom" constant="550" id="PDu-Ct-kOt"/>
                             <constraint firstItem="F5m-03-DWe" firstAttribute="leading" secondItem="nw8-3N-5w7" secondAttribute="leadingMargin" id="PQQ-vP-BmZ"/>
+                            <constraint firstAttribute="centerX" secondItem="HPH-lF-P5j" secondAttribute="centerX" id="TIe-e1-ark"/>
                             <constraint firstItem="1dw-1k-D5W" firstAttribute="top" secondItem="F5m-03-DWe" secondAttribute="bottom" constant="10" id="q6B-i2-zoK"/>
                             <constraint firstAttribute="centerX" secondItem="1dw-1k-D5W" secondAttribute="centerX" id="sJU-eH-phe"/>
                         </constraints>
@@ -304,6 +329,7 @@
                                 <exclude reference="nKw-qb-CDR"/>
                                 <exclude reference="F5m-03-DWe"/>
                                 <exclude reference="2gW-b2-SIz"/>
+                                <exclude reference="HPH-lF-P5j"/>
                                 <exclude reference="1dw-1k-D5W"/>
                             </mask>
                             <mask key="constraints">
@@ -313,6 +339,8 @@
                                 <exclude reference="5hN-IT-dXb"/>
                                 <exclude reference="FT5-r6-czi"/>
                                 <exclude reference="0Ff-yn-HCZ"/>
+                                <exclude reference="Jz5-zP-BhS"/>
+                                <exclude reference="TIe-e1-ark"/>
                                 <exclude reference="Gd6-w1-Et6"/>
                                 <exclude reference="PDu-Ct-kOt"/>
                             </mask>
@@ -323,6 +351,7 @@
                                 <include reference="nKw-qb-CDR"/>
                                 <include reference="F5m-03-DWe"/>
                                 <include reference="2gW-b2-SIz"/>
+                                <include reference="HPH-lF-P5j"/>
                                 <include reference="1dw-1k-D5W"/>
                             </mask>
                             <mask key="constraints">
@@ -332,11 +361,17 @@
                                 <include reference="5hN-IT-dXb"/>
                                 <include reference="FT5-r6-czi"/>
                                 <include reference="0Ff-yn-HCZ"/>
+                                <include reference="Jz5-zP-BhS"/>
+                                <include reference="TIe-e1-ark"/>
                                 <include reference="Gd6-w1-Et6"/>
                                 <include reference="PDu-Ct-kOt"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="1dw-1k-D5W" id="Bcc-sl-gSd"/>
+                        <outlet property="passwordText" destination="2gW-b2-SIz" id="9t4-EL-pZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Grk-RZ-qN3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

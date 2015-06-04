@@ -13,6 +13,7 @@
 		D998E3561B1FDDDA00E4AB0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D998E3551B1FDDDA00E4AB0B /* Images.xcassets */; };
 		D998E3591B1FDDDA00E4AB0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D998E3571B1FDDDA00E4AB0B /* LaunchScreen.xib */; };
 		D998E3651B1FDDDA00E4AB0B /* LoginAndRegisterExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998E3641B1FDDDA00E4AB0B /* LoginAndRegisterExampleTests.swift */; };
+		D998E3711B207D2E00E4AB0B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D998E3701B207D2E00E4AB0B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D998E35E1B1FDDDA00E4AB0B /* LoginAndRegisterExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginAndRegisterExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D998E3631B1FDDDA00E4AB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D998E3641B1FDDDA00E4AB0B /* LoginAndRegisterExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndRegisterExampleTests.swift; sourceTree = "<group>"; };
+		D998E3701B207D2E00E4AB0B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				D998E3551B1FDDDA00E4AB0B /* Images.xcassets */,
 				D998E3571B1FDDDA00E4AB0B /* LaunchScreen.xib */,
 				D998E34C1B1FDDDA00E4AB0B /* Supporting Files */,
+				D998E3701B207D2E00E4AB0B /* LoginViewController.swift */,
 			);
 			path = LoginAndRegisterExample;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D998E3711B207D2E00E4AB0B /* LoginViewController.swift in Sources */,
 				D998E3511B1FDDDA00E4AB0B /* ViewController.swift in Sources */,
 				D998E34F1B1FDDDA00E4AB0B /* AppDelegate.swift in Sources */,
 			);
@@ -411,6 +415,7 @@
 				D998E36A1B1FDDDA00E4AB0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D998E36B1B1FDDDA00E4AB0B /* Build configuration list for PBXNativeTarget "LoginAndRegisterExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				D998E36D1B1FDDDA00E4AB0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
