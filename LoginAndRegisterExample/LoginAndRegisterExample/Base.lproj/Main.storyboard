@@ -168,7 +168,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfa-fR-6J6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Sign Up" id="Arr-Cn-SCU">
+                                    <navigationItem title="회원가입" id="Arr-Cn-SCU">
                                         <barButtonItem key="leftBarButtonItem" image="icon_back" id="rzd-y2-Jkp">
                                             <connections>
                                                 <segue destination="iZP-T6-T3Y" kind="show" id="RCv-Eb-L17"/>
@@ -212,7 +212,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N35-Vg-hnY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Log In" id="ksA-f8-GCg">
+                                    <navigationItem title="로그인" id="ksA-f8-GCg">
                                         <barButtonItem key="leftBarButtonItem" image="icon_back" id="KTG-dV-aaI">
                                             <connections>
                                                 <segue destination="iZP-T6-T3Y" kind="show" id="Tkb-9h-RhB"/>
@@ -221,19 +221,119 @@
                                     </navigationItem>
                                 </items>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                    <rect key="frame" x="0.0" y="28" width="400" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입하러 가기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKw-qb-CDR">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="261" y="75" width="123" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 잊으셨나요?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5m-03-DWe">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="75" width="162" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-b2-SIz">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="HuK-Sl-P5G"/>
+                                    <constraint firstAttribute="width" constant="368" id="beZ-e6-KXB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="HuK-Sl-P5G"/>
+                                        <exclude reference="beZ-e6-KXB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="205" width="368" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="HuK-Sl-P5G"/>
+                                        <include reference="beZ-e6-KXB"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 주소" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-1k-D5W">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="368" id="7qf-Xe-kJf"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="8lB-P1-yo7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7qf-Xe-kJf"/>
+                                        <exclude reference="8lB-P1-yo7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="145" width="368" height="45"/>
+                                    <mask key="constraints">
+                                        <include reference="7qf-Xe-kJf"/>
+                                        <include reference="8lB-P1-yo7"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nKw-qb-CDR" firstAttribute="trailing" secondItem="nw8-3N-5w7" secondAttribute="trailingMargin" id="0Ff-yn-HCZ"/>
+                            <constraint firstAttribute="centerX" secondItem="2gW-b2-SIz" secondAttribute="centerX" id="5hN-IT-dXb"/>
+                            <constraint firstItem="2gW-b2-SIz" firstAttribute="top" secondItem="1dw-1k-D5W" secondAttribute="bottom" constant="10" id="FT5-r6-czi"/>
+                            <constraint firstItem="LNd-hr-Csn" firstAttribute="top" secondItem="nKw-qb-CDR" secondAttribute="bottom" constant="550" id="Gd6-w1-Et6"/>
+                            <constraint firstItem="LNd-hr-Csn" firstAttribute="top" secondItem="F5m-03-DWe" secondAttribute="bottom" constant="550" id="PDu-Ct-kOt"/>
+                            <constraint firstItem="F5m-03-DWe" firstAttribute="leading" secondItem="nw8-3N-5w7" secondAttribute="leadingMargin" id="PQQ-vP-BmZ"/>
+                            <constraint firstItem="1dw-1k-D5W" firstAttribute="top" secondItem="F5m-03-DWe" secondAttribute="bottom" constant="10" id="q6B-i2-zoK"/>
+                            <constraint firstAttribute="centerX" secondItem="1dw-1k-D5W" secondAttribute="centerX" id="sJU-eH-phe"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="N35-Vg-hnY"/>
+                                <exclude reference="nKw-qb-CDR"/>
+                                <exclude reference="F5m-03-DWe"/>
+                                <exclude reference="2gW-b2-SIz"/>
+                                <exclude reference="1dw-1k-D5W"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="PQQ-vP-BmZ"/>
+                                <exclude reference="q6B-i2-zoK"/>
+                                <exclude reference="sJU-eH-phe"/>
+                                <exclude reference="5hN-IT-dXb"/>
+                                <exclude reference="FT5-r6-czi"/>
+                                <exclude reference="0Ff-yn-HCZ"/>
+                                <exclude reference="Gd6-w1-Et6"/>
+                                <exclude reference="PDu-Ct-kOt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="N35-Vg-hnY"/>
+                                <include reference="nKw-qb-CDR"/>
+                                <include reference="F5m-03-DWe"/>
+                                <include reference="2gW-b2-SIz"/>
+                                <include reference="1dw-1k-D5W"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="PQQ-vP-BmZ"/>
+                                <include reference="q6B-i2-zoK"/>
+                                <include reference="sJU-eH-phe"/>
+                                <include reference="5hN-IT-dXb"/>
+                                <include reference="FT5-r6-czi"/>
+                                <include reference="0Ff-yn-HCZ"/>
+                                <include reference="Gd6-w1-Et6"/>
+                                <include reference="PDu-Ct-kOt"/>
                             </mask>
                         </variation>
                     </view>
@@ -247,6 +347,6 @@
         <image name="icon_back" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RCv-Eb-L17"/>
+        <segue reference="Tkb-9h-RhB"/>
     </inferredMetricsTieBreakers>
 </document>
